@@ -1,0 +1,4 @@
+-- Credentials
+
+SSID = "MALIBU"
+PASSWORD = "BANANAWOO"
