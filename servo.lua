@@ -14,7 +14,12 @@ target pulse width / total wave length (20000) x 1023 (10bit int)
 PIN CONNECTIONS
 Red => vin
 Brown => gnd
-Orange => D1
+
+Rail 1 => D2
+Rail 2 => D3
+Rail 3 => D4
+Rail 4 => D5
+Rail 5 => D6
 --]]
 
 local closePosition = 40
