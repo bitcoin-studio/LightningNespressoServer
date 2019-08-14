@@ -1,7 +1,7 @@
 {
   "name": "lightning-nespresso-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository is part of a Do-It-Yourself vending machine project which connects to a Bitcoin point of sales terminal.\nSelect your coffee, pay with Bitcoin (via Lightning Network), and the vending machine will deliver your Nespresso capsule.",
   "main": "index.js",
   "scripts": {
     "ls": "node_modules/.bin/nodemcu-tool fsinfo",
@@ -15,8 +15,12 @@
     "terminal": "node_modules/.bin/nodemcu-tool terminal",
     "terminal-py": "nodemcu-uploader --port /dev/tty.SLAB_USBtoUART terminal"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Stephane Roche",
+    "email": "bitcoin-studio@protonmail.com",
+    "url": "https://bitcoin-studio.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "nodemcu-tool": "^3.0.2",
     "serialport": "^7.1.5"
