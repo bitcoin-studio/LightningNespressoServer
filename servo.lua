@@ -30,7 +30,7 @@ for pin=2,6,1 do
     print("setup pin ", pin)
     pwm.setup(pin, 50, closePosition) --pwm.setup(ServoControlPin, PWMfrequency, PWMDutyCycle)
     pwm.start(pin)
-    tmr.delay(500000)
+    tmr.delay(400000) -- it needs at least this time (in microseconds) to let servos to position correctly
     pwm.stop(pin)
 end
 
@@ -40,7 +40,7 @@ local function open(pin)
     PWMDutyCycle = closePosition -- starts from close position
     repeat
         pwm.setduty(pin, PWMDutyCycle)
-        tmr.delay(5000)
+        tmr.delay(25000)
         print("PWMDutyCycle", PWMDutyCycle)
         PWMDutyCycle = PWMDutyCycle + 4
     until( PWMDutyCycle == openPosition + 4)
@@ -52,7 +52,7 @@ local function close(pin)
     PWMDutyCycle = openPosition -- starts from open position
     repeat
         pwm.setduty(pin, PWMDutyCycle)
-        tmr.delay(5000)
+        tmr.delay(25000)
         print("PWMDutyCycle", PWMDutyCycle)
         PWMDutyCycle = PWMDutyCycle - 4
     until( PWMDutyCycle == closePosition - 4)
