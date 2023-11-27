@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "nodemcu-tool": "^3.0.2",
+    "nodemcu-tool": "^3.1.0",
     "serialport": "^7.1.5"
   }
 }
